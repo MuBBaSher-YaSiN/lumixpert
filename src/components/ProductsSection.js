@@ -15,7 +15,7 @@ const categories = [
         key: 'holz',
         title: 'Holz',
         desc: 'Präzise Gravuren auf nachhaltigem Holz für besondere Produkte.',
-        image: '/holz.jpg',
+        image: '/holz.webp',
     },
     {
         key: 'leder',
@@ -51,7 +51,7 @@ export default function ProductsSection() {
     return (
         <section className="bg-black text-white py-24 px-4">
             <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-2">Unsere Galerie</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-2 text-red-500">Unsere Galerie</h2>
                 <p className="text-gray-400">Entdecken Sie unsere hochwertigen Gravurmaterialien für außergewöhnliche Ergebnisse.</p>
             </div>
 

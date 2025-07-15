@@ -6,7 +6,7 @@ export default function HeroSection() {
         <section className="min-h-screen flex flex-col items-center justify-center bg-black text-white relative px-4 text-center">
             <div className="mb-6">
                 <Image
-                    src="/logo.png"
+                    src="/logo.webp"
                     alt="LUMIXPERT Logo"
                     width={100}
                     height={100}

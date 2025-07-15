@@ -39,8 +39,6 @@ export default function ManageProductsPage() {
         }
     }
 
-
-    // fetch products
     useEffect(() => {
         const fetchProducts = async () => {
             setLoading(true)
@@ -53,26 +51,22 @@ export default function ManageProductsPage() {
         fetchProducts()
     }, [])
 
-    // handle delete
     const handleDelete = async (id) => {
         if (!confirm('Produkt wirklich löschen?')) return
         await deleteDoc(doc(db, 'products', id))
         setProducts(products.filter(p => p.id !== id))
     }
 
-    // begin edit
     const startEdit = (p) => {
         setEditId(p.id)
         setForm({ text: p.text, image: p.image })
     }
 
-    // cancel edit
     const cancelEdit = () => {
         setEditId(null)
         setForm({ text: '', image: '' })
     }
 
-    // save edit
     const saveEdit = async (id) => {
         const refDoc = doc(db, 'products', id)
         await updateDoc(refDoc, { text: form.text, image: form.image })
