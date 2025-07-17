@@ -103,7 +103,7 @@ export default function ContactDataPage() {
                                     <span className="text-red-400">E-Mail:</span> {msg.email}
                                 </p>
                                 <p className="text-sm text-gray-300 mb-1">
-                                    <span className="text-red-400">Betreff:</span> {msg.subject}
+                                    <span className="text-red-400">Betreff:</span> {msg.betreff}
                                 </p>
                                 <p className="text-sm text-gray-200 whitespace-pre-line mt-2">
                                     {msg.message}

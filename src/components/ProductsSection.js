@@ -71,6 +71,14 @@ export default function ProductsSection() {
                         <div className="p-4">
                             <h3 className="text-lg font-semibold">{cat.title}</h3>
                             <p className="text-sm text-gray-400">{cat.desc}</p>
+
+                            <button
+                                onClick={() => setModalCategory(cat)}
+                                className="mt-2 inline-block bg-red-600 hover:bg-red-700 text-white text-sm px-4 py-2 rounded-full transition cursor-pointer"
+                            >
+                                Mehr erfahren →
+                            </button>
+
                         </div>
                         <div className="absolute top-3 right-3 text-xs bg-white text-black px-3 py-1 rounded-full shadow">
                             {productCounts[cat.key] ?? 0} Produkte

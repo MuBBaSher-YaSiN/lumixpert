@@ -34,7 +34,7 @@ export default function HeroSection() {
                     }
                 }}
                 className="bg-red-600 hover:bg-red-700 text-white font-medium py-3 px-6 rounded-full shadow-lg transition cursor-pointer">
-                Angebot anfordern →
+                Jetzt unverbindlich anfragen →
             </button>
 
             <div className="absolute bottom-8 animate-bounce">

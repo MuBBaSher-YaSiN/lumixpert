@@ -13,7 +13,7 @@ export default function Footer() {
                 <div className="h-1 w-24 mx-auto bg-red-600 mb-4" />
 
                 <p className="text-gray-300 text-sm md:text-base max-w-xl mx-auto mb-6">
-                    Your partner for professional laser engraving with the latest technology and the highest quality standards.
+                    Ihr Partner für professionelle Lasergravuren mit modernster Technologie und höchsten Qualitätsstandards.
                 </p>
 
                 <div className="flex justify-center gap-6 mb-10">
@@ -32,14 +32,6 @@ export default function Footer() {
                         className="bg-zinc-800 p-3 rounded-full hover:bg-red-600 transition"
                     >
                         <FaFacebookF size={20} />
-                    </a>
-                    <a
-                        href="https://wa.me/491781638184"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-zinc-800 p-3 rounded-full hover:bg-red-600 transition"
-                    >
-                        <FaWhatsapp size={20} />
                     </a>
                 </div>
 
