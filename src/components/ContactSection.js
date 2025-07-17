@@ -268,8 +268,54 @@ export default function ContactSection() {
                     </form>
                 </motion.div>
 
-                {/* Info Side - unchanged */}
-                {/* ... */}
+                {/* Info Side */}
+                <motion.div
+                    initial={{ opacity: 0, x: 30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6 }}
+                    viewport={{ once: true }}
+                    className="flex flex-col justify-center space-y-8"
+                >
+                    <div className="space-y-4 text-sm">
+                        <h3 className="text-lg font-semibold text-red-500">Kontaktinformationen</h3>
+
+                        {[
+                            {
+                                icon: <FaEnvelope className="text-xl" />,
+                                label: 'E-Mail',
+                                value: 'lumixpert.de@gmail.com',
+                            },
+                            {
+                                icon: <FaPhone className="text-xl" />,
+                                label: 'Telefon',
+                                value: '+49 178 1638184',
+                            },
+                            {
+                                icon: <FaMapMarkerAlt className="text-xl" />,
+                                label: 'Adresse',
+                                value: 'Schwalbenweg 19\n34212 Melsungen',
+                            },
+                        ].map((item, i) => (
+                            <div
+                                key={i}
+                                className="flex items-start gap-4 p-4 bg-zinc-900 border border-zinc-800 rounded-xl hover:border-red-500 hover:shadow-red-500/20 hover:shadow-lg transition-all duration-300"
+                            >
+                                <div className="text-red-400 group-hover:text-red-500 transition">{item.icon}</div>
+                                <div className="text-white">
+                                    <p className="text-sm font-semibold mb-1 text-red-500">{item.label}</p>
+                                    <p className="whitespace-pre-line text-sm">{item.value}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className="text-sm p-4 bg-zinc-900 border border-zinc-800 rounded-xl hover:border-red-500 hover:shadow-lg hover:shadow-red-500/20 transition-all duration-300">
+                        <h4 className="text-lg font-semibold text-red-500 mb-2">Öffnungszeiten</h4>
+                        <p>Montag – Freitag: 9:00 – 18:00</p>
+                        <p>Samstag: 10:00 – 16:00</p>
+                        <p>Sonntag: geschlossen</p>
+                    </div>
+                </motion.div>
             </div>
         </section>
     )
