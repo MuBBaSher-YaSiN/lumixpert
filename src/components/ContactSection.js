@@ -246,7 +246,7 @@ export default function ContactSection() {
 
                         <ReCAPTCHA
                             ref={recaptchaRef}
-                            sitekey="6LcLEIYrAAAAACd1Dzso1toEraY54pNO1FJhCGn0"
+                            sitekey="6LcnE4YrAAAAAM_YXpIr_HEE8Z95gASYliTVIaA2"
                             onChange={handleCaptcha}
                             className="pt-2"
                         />
